@@ -21,9 +21,9 @@ def ice_break(name: str, job_description: str) -> Tuple[PersonIntel,str]:
     summary_template = """
         given the information {information} about a person with the job profile "{job_description}", I want you to create:
         1. a short summary about this person.
-        2. two interesting facts about this person.
+        2. generate a set of HR interview questions. The system should analyze the candidate's professional experiences, skills, and personal attributes from their LinkedIn profile. It should focus on questions that delve into the candidate's motivations, communication skills, teamwork, adaptability, leadership potential, and cultural fit for the company. These questions should help in assessing the candidate's personality, behavior in work-related scenarios, and alignment with the company's values and work environment. The output should consist of 5 HR-related questions aimed at evaluating the candidate's suitability and compatibility for the role within the organization.
         3. A topic that may interest this person.
-        4. 5 Interview questions specific to the job description to interview them {format_instructions}
+        4. generate a set of technical interview questions. The system should analyze the candidate's technical skills, experience, and educational background as reflected in their LinkedIn profile. It should focus on probing the candidate's knowledge, problem-solving abilities, and expertise in the relevant technical areas. The questions should cover both theoretical concepts and practical application, testing the candidate's proficiency and understanding in the specific domain. The output should include 5 technical questions that assess the candidate's suitability and competence for the targeted technical role to interview them {format_instructions}
 """
 
     summary_prompt_template = PromptTemplate(

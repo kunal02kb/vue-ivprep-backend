@@ -9,12 +9,12 @@ class PersonIntel(BaseModel):
     """
 
     summary: str = Field(description="Summary of the person")
-    facts: List[str] = Field(description="Interesting Facts about the person")
+    facts: List[str] = Field(description="5 HR-related questions aimed at evaluating the candidate's suitability and compatibility for the role within the organization")
     topic_of_interest: List[str] = Field(
         description="Topic that may interest the person"
     )
     ice_breaker: List[str] = Field(
-        description="Create Ice breakers to open the conversation with person"
+        description="5 technical questions that assess the candidate's suitability and competence for the targeted technical role"
     )
 
     def to_dict(self):
