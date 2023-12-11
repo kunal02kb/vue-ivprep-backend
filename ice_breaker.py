@@ -54,6 +54,6 @@ def ice_break(name: str, job_description: str) -> Tuple[PersonIntel,str]:
 if __name__ == "__main__":
     print("hello langchain")
 
-    result = ice_break(name="Harsh Walia Data Scientist")
+    result = ice_break(name="Sparsh Gupta Data Scientist")
     print(type(result))
     print(result)
